@@ -5,7 +5,7 @@ const CURRENT_WORKING_DIR = process.cwd()
 const config = {
     mode: "production",
     entry: [
-        path.join(CURRENT_WORKING_DIR, 'client/index.js')
+        path.join(CURRENT_WORKING_DIR, 'resources/client/index.js')
     ],
     output: {
         path: path.join(CURRENT_WORKING_DIR, '/dist'),
