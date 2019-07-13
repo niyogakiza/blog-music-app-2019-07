@@ -10,9 +10,9 @@ const config = {
     ],
     target: 'node',
     output: {
-        path: path.join(CURRENT_WORKING_DIR, '/dist'),
+        path: path.join(CURRENT_WORKING_DIR, 'public/dist'),
         filename: 'server.generated.js',
-        publicPath: '/dist/',
+        publicPath: '/public/dist/',
         libraryTarget: 'commonjs2'
     },
     externals: [nodeExternals()],
@@ -24,7 +24,11 @@ const config = {
                 use: [
                     'babel-loader'
                 ]
-            }
+            },
+            {
+                test: /\.css$/,
+                use: ['style-loader', 'css-loader'],
+            },
         ]
 
     }

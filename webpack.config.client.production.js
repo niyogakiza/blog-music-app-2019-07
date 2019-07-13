@@ -8,9 +8,9 @@ const config = {
         path.join(CURRENT_WORKING_DIR, 'resources/client/index.js')
     ],
     output: {
-        path: path.join(CURRENT_WORKING_DIR, '/dist'),
+        path: path.join(CURRENT_WORKING_DIR, 'public/dist'),
         filename: 'bundle.js',
-        publicPath: '/dist/'
+        publicPath: '/public/dist/'
     },
     module: {
         rules: [
@@ -20,7 +20,11 @@ const config = {
                 use: [
                     'babel-loader'
                 ]
-            }
+            },
+            {
+                test: /\.css$/,
+                use: 'css-loader',
+            },
         ]
     }
 }
