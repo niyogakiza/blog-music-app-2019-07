@@ -7,6 +7,7 @@ module.exports = {
     ],
     plugins: [
         "react",
+        "prettier",
         "react-hooks",
         "jsx-a11y"
     ],
@@ -15,6 +16,7 @@ module.exports = {
         "react/jsx-curly-brace-presence": ["error", { "props": "never", "children": "never" }],
         "react-hooks/rules-of-hooks": "error",
         "react-hooks/exhaustive-deps": "warn",
+        "prettier/prettier": "error"
     },
     settings: {
         react: {
