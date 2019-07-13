@@ -1,5 +1,6 @@
 import React from 'react'
 import { render } from 'react-dom'
-import Hello from './components/Hello'
+import Main from './components/main'
+import '../../public/css/void-singer.css'
 
-render(<Hello />, document.getElementById('root'))
+render(<Main />, document.getElementById('root'))
